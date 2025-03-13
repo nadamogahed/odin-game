@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    animation: gradientBackground 2s infinite;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+@keyframes gradientBackground {
+    0% {
+        background: linear-gradient(45deg, #ff0000, #0000ff);
+    }
+    25% {
+        background: linear-gradient(45deg, #00ff00, #ff00ff);
+    }
+    50% {
+        background: linear-gradient(45deg, #0000ff, #ffff00);
+    }
+    75% {
+        background: linear-gradient(45deg, #ff00ff, #00ffff);
+    }
+    100% {
+        background: linear-gradient(45deg, #ff0000, #0000ff);
+    }
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 2rem;
+    color: aliceblue;
+    font-weight: bolder;
+}
+
+p {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    color: rgba(240, 248, 255, 0.795);
+}
+
+button {
+    display: block;
+    margin: 2rem auto;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
